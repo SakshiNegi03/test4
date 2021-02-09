@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.xyz{
+
+background-color: #45a049;
+  
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #B8B8B8;
+  padding: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #20B2AA;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  color: #AFEEEE;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="header">
+ <div class="topnav">
+  <a class="active" href="#TO The New">To The New</a>
+  <div class="topnav-right">
+    <a href="#search">Search</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+
+<div class="container2">
+  Bug Report
+</div>
+
+<div class="container">
+  
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="title">Title</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="title" name="title" required>
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="discription">Discription</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Operating System">Operating System</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="linux">Linux</option>
+          <option value="windows">Windows</option>
+          <option value="ios">IOS</option>
+        </select>
+      </div>
+      
+       <div class="row">
+      <div class="col-25">
+        <label for="Product">Product</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="formoid">Formoid</option>
+          <option value="xyz">XYZ</option>
+          <option value="abc">ABC</option>
+        </select>
+      </div>
+      
+      
+      <div class="row">
+      <div class="col-25">
+        <label for="version">Version</label>
+      </div>
+      <div class="col-75">
+        
+      </div>
+      <br>
+      <div>
+    <div class="col-75">
+        <input type="text" id="fname" name="License">
+      </div>
+       </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="License">License</label>
+      </div>
+  <input type="radio" name="free" value="Free"> Free<br>
+  <input type="radio" name="business" value="Business"> Business<br>
+     
+      </div>
+      
+        <div class="row">
+      <div class="col-25">
+        <label for="severity">Severity</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="critical">Critical</option>
+          <option value="good">Good</option>
+          <option value="moderate">Moderate</option>
+        </select>
+      </div>
+      </div>
+      <br>
+      <p>Click on the "Choose File" button to upload a file:</p>    
+<form >    
+  <input type="file" id="myFile" name="filename">        
+</form>    
+</div> 
+    </div>
+   <br>
+    </div>
+  </form>
+</div>
+<div>
+  <footer> 
+  <div class="row">
+      <input type="submit" value="submit">
+    </div>
+  </footer>
+
+</body>
+</html>
